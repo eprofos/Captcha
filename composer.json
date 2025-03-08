@@ -1,0 +1,51 @@
+{
+    "name": "eprofos/captcha",
+    "description": "A professional PHP 8+ library for generating visually sophisticated captchas with advanced security features and accessibility options",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": [
+        "captcha",
+        "security",
+        "anti-spam",
+        "verification",
+        "authentication",
+        "accessibility",
+        "php8"
+    ],
+    "authors": [
+        {
+            "name": "Houssem TAYECH",
+            "email": "houssem@eprofos.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Eprofos\\Captcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eprofos\\Captcha\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-gd": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.14"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse",
+        "cs-fix": "php-cs-fixer fix",
+        "cs-check": "php-cs-fixer fix --dry-run --diff"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,33 @@
+# Composer
+/vendor/
+/composer.phar
+composer.lock
+
+# PHPUnit
+/.phpunit.cache/
+/.phpunit.result.cache
+
+# PHP-CS-Fixer
+/.php-cs-fixer.cache
+
+# PHPStan
+/.phpstan.cache/
+
+# IDE files
+/.idea/
+/.vscode/
+/.phpintel/
+/.php_cs.cache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker files (Test environment)
+docker-compose.yml
+Dockerfile
